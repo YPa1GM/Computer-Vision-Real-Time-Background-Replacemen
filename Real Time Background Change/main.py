@@ -41,7 +41,7 @@ def main():
         img_stacked = cvzone.stackImages([img, img_out], 2, 1)
 
         # Display the stacked images
-        cv2.imshow("CV_Images", img_stacked)
+        cv2.imshow("CV_Image", img_stacked)
 
         # Wait for a key press
         key = cv2.waitKey(1)
