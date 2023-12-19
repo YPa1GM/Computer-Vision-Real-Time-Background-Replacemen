@@ -23,7 +23,7 @@ def main():
     segmentor = SelfiSegmentation()
 
     # Load images from the "Images" directory
-    image_directory = "CV_Images"
+    image_directory = "Images"
     img_list = load_images_from_directory(image_directory)
 
     # Initialize the index for cycling through images
