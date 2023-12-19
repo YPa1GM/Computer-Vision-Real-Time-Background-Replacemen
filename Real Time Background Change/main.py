@@ -22,8 +22,8 @@ def main():
     # Initialize the SelfiSegmentation module
     segmentor = SelfiSegmentation()
 
-    # Load images from the "Images" directory
-    image_directory = "Images"
+    # Load images from the "CV_Images" directory
+    image_directory = "CV_Images"
     img_list = load_images_from_directory(image_directory)
 
     # Initialize the index for cycling through images
@@ -41,7 +41,7 @@ def main():
         img_stacked = cvzone.stackImages([img, img_out], 2, 1)
 
         # Display the stacked images
-        cv2.imshow("Image", img_stacked)
+        cv2.imshow("CV_Images", img_stacked)
 
         # Wait for a key press
         key = cv2.waitKey(1)
